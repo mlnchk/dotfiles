@@ -1,1 +1,1 @@
-pip install ansible && ansible-playbook playbook.yml;
+pip install ansible & ansible-playbook playbook.yml;
