@@ -1,2 +1,1 @@
-# pip install ansible && ansible-playbook playbook.yml;
-echo 'test'
+pip install ansible && ansible-playbook playbook.yml;
