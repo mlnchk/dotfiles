@@ -22,7 +22,7 @@ cask "kitty"
 cask "slack"
 cask "spotify"
 cask "iina"
-mas "Xcode", id: 497799835
 mas "Magnet", id: 441258766
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
+mas "Xcode", id: 497799835
