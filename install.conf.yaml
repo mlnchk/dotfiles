@@ -1,5 +1,6 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ["~"]
@@ -7,12 +8,15 @@
 - shell:
     - [chsh -s $(which zsh), Making zsh the default shell ⌨️]
     - [sh scripts/pre-install.sh, Running pre installation script 🏃‍♂️]
+    - [cp stefanjudis.zsh-theme $HOME/.oh-my-zsh/themes]
     - [brew bundle, Install all Brew packages 🍺]
 
 - link:
-    ~/.gitconfig: configs/.gitconfig
-    ~/.zshrc: configs/.zshrc
-    ~/.vimrc: configs/.vimrc
+    ~/.gitconfig: configs/gitconfig
+    ~/.zshrc:
+      force: true
+      path: configs/zshrc
+    ~/.vimrc: configs/vimrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

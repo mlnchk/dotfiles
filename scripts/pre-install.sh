@@ -20,15 +20,6 @@ else
   upgrade_oh_my_zsh
 fi
 
-# Check if Mac-CLI is installed
-if [ ! -f "which mac" ]; then
-    echo 'Installing Mac-CLI'
-    /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
-else
-    echo 'Updating Mac-CLI'
-    /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/update)"
-fi
-
 # Change default shell
 if [! $0 = "-zsh"]; then
   echo 'Changing default shell to zsh'
