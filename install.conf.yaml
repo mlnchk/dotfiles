@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- shell:
+    - [chsh -s $(which zsh), Making zsh the default shell ⌨️]
+    - [sh scripts/pre-install.sh, Running pre installation script 🏃‍♂️]
+    - [brew bundle, Install all Brew packages 🍺]
+
+- link:
+    ~/.gitconfig: configs/.gitconfig
+    ~/.zshrc: configs/.zshrc
+    ~/.vimrc: configs/.vimrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
