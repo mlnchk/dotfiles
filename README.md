@@ -3,7 +3,7 @@
 ## Usage
 
 ```sh
-curl -L bit.ly/oh-my-mac
+./install
 ```
 
 ## TODO
