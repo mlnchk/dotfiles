@@ -19,3 +19,5 @@ source $ZSH/oh-my-zsh.sh
 
 alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 alias gitclean="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
+
+eval $(thefuck --alias)

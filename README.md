@@ -8,7 +8,5 @@
 
 ## TODO
 
-- install autojump
-- insttall thefuck
 - iterm config and theme
 - vscode config and theme
