@@ -6,8 +6,12 @@
 - clean: ["~"]
 
 - shell:
-    - [chsh -s $(which zsh), Making zsh the default shell ⌨️]
     - [sh scripts/pre-install.sh, Running pre installation script 🏃‍♂️]
+    - [mkdir -p ~/.oh-my-zsh/custom/, Creating oh-my-zsh custom forlders]
+    - [
+        mkdir -p ~/.oh-my-zsh/custom/plugins,
+        Creating oh-my-zsh custom plugins forlders,
+      ]
     - [cp stefanjudis.zsh-theme $HOME/.oh-my-zsh/themes]
     - [brew bundle, Install all Brew packages 🍺]
 
@@ -17,6 +21,8 @@
       force: true
       path: configs/zshrc
     ~/.vimrc: configs/vimrc
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/plugins/zsh-syntax-highlighting/
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/plugins/zsh-autosuggestions/
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
