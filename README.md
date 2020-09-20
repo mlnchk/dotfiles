@@ -9,8 +9,6 @@
 ## TODO
 
 - iterm config and theme
-- vscode config and theme
-
 - MACOS settings
   - change lang to caps lock
   - spotlight to cmd + space

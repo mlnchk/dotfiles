@@ -25,6 +25,10 @@
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/plugins/zsh-syntax-highlighting/
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/plugins/zsh-autosuggestions/
     ~/.oh-my-zsh/themes/stefanjudis.zsh-theme: oh-my-zsh/themes/stefanjudis.zsh-theme
+    "~/Library/Application Support/Code/User/settings.json":
+      force: true
+      path: vscode/settings.json
 
 - shell:
+    - [sh scripts/install-vscode-extentions.sh, Installing vscode extentions]
     - [git submodule update --init --recursive, Installing submodules]

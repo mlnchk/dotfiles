@@ -1,0 +1,51 @@
+{
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'Fira code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.rulers": [100],
+  "explorer.openEditors.visible": 0,
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": false,
+  "workbench.enableExperiments": false,
+  "workbench.startupEditor": "welcomePage",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.settings.editor": "json",
+  "workbench.panel.defaultLocation": "right",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 0,
+  "window.newWindowDimensions": "maximized",
+  "zenMode.fullScreen": true,
+  "search.smartCase": true,
+  "javascript.format.enable": true,
+  "emmet.triggerExpansionOnTab": true,
+  "git.detectSubmodules": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ---- extentions settings ---- //
+  "prettier.eslintIntegration": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "workbench.colorTheme": "Horizon"
+}
