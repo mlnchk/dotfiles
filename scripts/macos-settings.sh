@@ -7,8 +7,9 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Make a good typing experience
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Tap to click
+# Make Trackpad less annoying
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -bool false
 
 # Make Dock less annoying
 defaults write com.apple.dock show-recents -bool false
