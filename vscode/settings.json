@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 12,
+  "editor.fontSize": 13,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "none",
   "editor.minimap.enabled": false,
@@ -12,7 +12,7 @@
   "workbench.enableExperiments": false,
   "workbench.startupEditor": "welcomePage",
   "workbench.editor.labelFormat": "short",
-  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.tabCloseButton": "off",
   "workbench.settings.editor": "json",
   "workbench.panel.defaultLocation": "right",
   "files.insertFinalNewline": true,
@@ -47,5 +47,12 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.hovers.enabled": false,
-  "workbench.colorTheme": "Horizon"
+  "workbench.colorTheme": "Github Light Theme - Gray",
+  "workbench.sideBar.location": "left",
+  "workbench.iconTheme": "chalice-icon-theme",
+  "gitlens.views.commits.showBranchComparison": false,
+  "gitlens.views.commits.avatars": false,
+  "gitlens.views.fileHistory.avatars": false,
+  "gitlens.views.branches.avatars": false,
+  "diffEditor.renderSideBySide": false
 }
