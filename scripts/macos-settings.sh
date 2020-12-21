@@ -16,3 +16,13 @@ defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock launchanim -bool false
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock tilesize -int 45
+
+# Disable the “Are you sure you want to open this application?” dialog (doesn't work)
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string "$HOME/Desktop"
+
+# Remove ui sound (doesn't work)
+defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -bool false
+defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
