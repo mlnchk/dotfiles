@@ -6,6 +6,10 @@ module.exports = {
       browser: ["Google Chrome", "Safari"],
     },
     {
+      match: /^https?:\/\/vas3k\.club\/.*$/,
+      browser: "Safari",
+    },
+    {
       match: "open.spotify.com*",
       browser: "Spotify",
     },
