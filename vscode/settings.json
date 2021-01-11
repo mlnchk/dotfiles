@@ -56,5 +56,6 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.blame.avatars": false,
   "gitlens.blame.highlight.locations": ["overview", "line", "gutter"],
-  "gitlens.blame.heatmap.enabled": false
+  "gitlens.blame.heatmap.enabled": false,
+  "extensions.ignoreRecommendations": true
 }
