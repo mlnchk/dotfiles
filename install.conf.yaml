@@ -22,6 +22,7 @@
       force: true
       path: configs/zshrc
     ~/.vimrc: configs/vimrc
+    ~/.finicky.js: configs/finicky.js
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/plugins/zsh-syntax-highlighting/
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/plugins/zsh-autosuggestions/
     ~/.oh-my-zsh/themes/stefanjudis.zsh-theme: oh-my-zsh/themes/stefanjudis.zsh-theme
