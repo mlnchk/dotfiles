@@ -34,6 +34,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -45,7 +48,7 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.enabled": false,
-  "workbench.colorTheme": "Github Light Theme - Gray",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.sideBar.location": "left",
   "workbench.iconTheme": "chalice-icon-theme",
   "gitlens.views.commits.showBranchComparison": false,
@@ -57,5 +60,7 @@
   "gitlens.blame.avatars": false,
   "gitlens.blame.highlight.locations": ["overview", "line", "gutter"],
   "gitlens.blame.heatmap.enabled": false,
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "diffEditor.ignoreTrimWhitespace": false
 }

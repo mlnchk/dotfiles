@@ -1,7 +1,12 @@
+artlaman.chalice-icon-theme
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
-jolaleye.horizon-theme-vscode
+GitHub.codespaces
+GitHub.github-vscode-theme
+GitHub.vscode-pull-request-github
 ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack
+msjsdiag.debugger-for-chrome
+vscodevim.vim
