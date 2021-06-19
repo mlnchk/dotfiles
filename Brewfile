@@ -20,11 +20,13 @@ cask "google-chrome"
 cask "iina"
 cask "iterm2"
 cask "maccy"
+cask "meetingbar"
 cask "paw"
 cask "proxyman"
 cask "slack"
 cask "spotify"
 cask "visual-studio-code"
+mas "Bitwarden", id: 1352778147
 mas "Magnet", id: 441258766
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353

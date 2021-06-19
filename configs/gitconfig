@@ -1,3 +1,5 @@
 [user]
 	email = danil.mlnchk@gmail.com
 	name = mlnchk
+[init]
+	defaultBranch = main

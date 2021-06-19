@@ -17,6 +17,10 @@ defaults write com.apple.dock launchanim -bool false
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock tilesize -int 45
 
+# TODO: check this out
+defaults write com.apple.dock autohide-delay -int 0
+defaults write com.apple.dock autohide-time-modifier -float 0.4
+
 # Disable the “Are you sure you want to open this application?” dialog (doesn't work)
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
