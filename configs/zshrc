@@ -16,7 +16,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 alias gitclean="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"

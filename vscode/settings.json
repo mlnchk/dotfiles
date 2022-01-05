@@ -14,7 +14,6 @@
   "workbench.editor.labelFormat": "short",
   "workbench.editor.tabCloseButton": "off",
   "workbench.settings.editor": "json",
-  "workbench.panel.defaultLocation": "right",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -22,7 +21,6 @@
   "git.autofetch": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "window.zoomLevel": 0.2,
   "window.newWindowDimensions": "maximized",
   "zenMode.fullScreen": true,
   "search.smartCase": true,
@@ -55,13 +53,12 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.enabled": false,
   "workbench.colorTheme": "GitHub Light",
-  "workbench.sideBar.location": "left",
   "workbench.iconTheme": "chalice-icon-theme",
   "gitlens.views.commits.showBranchComparison": false,
   "gitlens.views.commits.avatars": false,
   "gitlens.views.fileHistory.avatars": false,
   "gitlens.views.branches.avatars": false,
-  "diffEditor.renderSideBySide": false,
+  "diffEditor.renderSideBySide": true,
   "gitlens.codeLens.enabled": false,
   "gitlens.blame.avatars": false,
   "gitlens.blame.highlight.locations": ["overview", "line", "gutter"],
@@ -78,6 +75,9 @@
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "window.autoDetectColorScheme": true,
-  "workbench.activityBar.visible": false,
-  "xo.enable": true
+  "files.exclude": {
+    "**/package-lock.json": true
+  },
+  "xo.overrideSeverity": "warn",
+  "window.zoomLevel": 0.4
 }
