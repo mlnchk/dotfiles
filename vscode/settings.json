@@ -52,7 +52,7 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.enabled": false,
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "chalice-icon-theme",
   "gitlens.views.commits.showBranchComparison": false,
   "gitlens.views.commits.avatars": false,
@@ -75,9 +75,10 @@
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "window.autoDetectColorScheme": true,
-  "files.exclude": {
+  "search.exclude": {
     "**/package-lock.json": true
   },
   "xo.overrideSeverity": "warn",
-  "window.zoomLevel": 0.4
+  "window.zoomLevel": 0.4,
+  "vim.smartRelativeLine": true
 }

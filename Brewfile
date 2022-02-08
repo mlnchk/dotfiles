@@ -35,6 +35,8 @@ cask "transmission"
 cask "visual-studio-code"
 mas "Amphetamine", id: 937984704
 mas "Bitwarden", id: 1352778147
+mas "Dato", id: 1470584107
+mas "Flow", id: 1423210932
+mas "Hidden Bar", id: 1452453066
 mas "Magnet", id: 441258766
-mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353

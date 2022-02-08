@@ -32,3 +32,6 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 # Remove ui sound (doesn't work)
 defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -bool false
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+
+# VIM mode key repeat
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
