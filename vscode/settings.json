@@ -45,10 +45,7 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
-  // ---- extentions settings ---- //
+  // ---- extensions settings ---- //
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.enabled": false,

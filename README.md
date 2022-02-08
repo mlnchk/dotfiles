@@ -14,3 +14,8 @@
   - spotlight to cmd + space
   - natural scroll for touchpad but usual for mouse
   - kabardiner elements ???
+
+# Helpers
+
+- brew bundle dump
+- code --list-extensions > vscode/extensions.txt

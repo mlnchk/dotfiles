@@ -33,5 +33,5 @@
       path: vscode/keybindings.json
 
 - shell:
-    - [sh scripts/install-vscode-extentions.sh, Installing vscode extentions]
+    - [sh scripts/install-vscode-extensions.sh, Installing vscode extensions]
     - [git submodule update --init --recursive, Installing submodules]
