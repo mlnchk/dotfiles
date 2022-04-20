@@ -17,6 +17,7 @@
     - [echo "You need to log out and log in to apply OS settings"]
 
 - link:
+    ~/.gitignore_global: configs/gitignore
     ~/.gitconfig: configs/gitconfig
     ~/.zshrc:
       force: true

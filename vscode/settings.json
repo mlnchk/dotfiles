@@ -9,6 +9,7 @@
     "strings": true
   },
   "explorer.openEditors.visible": 0,
+  "workbench.editor.enablePreview": false,
   "workbench.enableExperiments": false,
   "workbench.startupEditor": "welcomePage",
   "workbench.editor.labelFormat": "short",
@@ -45,11 +46,12 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "keyboard.dispatch": "keyCode",
   // ---- extensions settings ---- //
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.enabled": false,
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.iconTheme": "chalice-icon-theme",
   "gitlens.views.commits.showBranchComparison": false,
   "gitlens.views.commits.avatars": false,
@@ -75,7 +77,8 @@
   "search.exclude": {
     "**/package-lock.json": true
   },
-  "xo.overrideSeverity": "warn",
   "window.zoomLevel": 0.4,
-  "vim.smartRelativeLine": true
+  "vim.smartRelativeLine": true,
+  "prettier.useEditorConfig": false,
+  "workbench.activityBar.visible": false
 }
