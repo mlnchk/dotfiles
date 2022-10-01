@@ -32,8 +32,11 @@ alias gitclean="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | x
 alias k="kubectl"
 eval $(thefuck --alias)
 
-# PLUGINS
+# ADDONS
+. $(brew --prefix asdf)/libexec/asdf.sh
 eval "$(zoxide init zsh)"
+
+# PLUGINS
 source ~/.zsh-plugins/git.zsh
 source ~/.zsh-plugins/directories.zsh
 source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

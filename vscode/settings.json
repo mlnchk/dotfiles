@@ -51,7 +51,7 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.enabled": false,
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "chalice-icon-theme",
   "gitlens.views.commits.showBranchComparison": false,
   "gitlens.views.commits.avatars": false,
