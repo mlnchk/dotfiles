@@ -5,27 +5,27 @@
 
 - clean: ["~"]
 
-- shell:
-    - [sh scripts/pre-install.sh, Running pre installation script 🏃‍♂️]
-    - [mkdir -p ~/.oh-my-zsh/custom/, Creating oh-my-zsh custom folders]
-    - [
-        mkdir -p ~/.oh-my-zsh/custom/plugins,
-        Creating oh-my-zsh custom plugins folders,
-      ]
-    - [brew bundle, Install all Brew packages 🍺]
-    - [sh scripts/macos-settings.sh, Configure MacOS settings 🔩]
-    - [echo "You need to log out and log in to apply OS settings"]
+# - shell:
+#     - [sh scripts/install-brew.sh, Installing Hombrew 🍺]
+#     - [brew tap homebrew/bundle, Installing Homebrew Bundle 🍺]
+#     - [brew bundle, Installing all Brew packages 🍺]
+#     - [sh scripts/switch-shell.sh, Switching to zsh 💾]
+#     - [sh scripts/macos-settings.sh, Configure MacOS settings 🔩]
+#     - [echo "You need to log out and log in to apply OS settings"]
 
 - link:
-    ~/.gitignore_global: configs/gitignore
-    ~/.gitconfig: configs/gitconfig
+    ~/.gitignore_global: git/gitignore
+    ~/.gitconfig: git/gitconfig
+    ~/.zsh-plugins:
+      path: zsh/plugins
+    ~/.zprofile:
+      force: true
+      path: zsh/zprofile
     ~/.zshrc:
       force: true
-      path: configs/zshrc
-    ~/.vimrc: configs/vimrc
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/plugins/zsh-syntax-highlighting/
-    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/plugins/zsh-autosuggestions/
-    ~/.oh-my-zsh/themes/stefanjudis.zsh-theme: oh-my-zsh/themes/stefanjudis.zsh-theme
+      path: zsh/zshrc
+    # ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/plugins/zsh-syntax-highlighting/
+    # ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/plugins/zsh-autosuggestions/
     ~/.finicky.js: configs/finicky.js
     "~/Library/Application Support/Code/User/settings.json":
       force: true
@@ -33,7 +33,6 @@
     "~/Library/Application Support/Code/User/keybindings.json":
       force: true
       path: vscode/keybindings.json
-
-- shell:
-    - [sh scripts/install-vscode-extensions.sh, Installing vscode extensions]
-    - [git submodule update --init --recursive, Installing submodules]
+# - shell:
+#     - [sh scripts/install-vscode-extensions.sh, Installing vscode extensions]
+#     - [git submodule update --init --recursive, Installing submodules]

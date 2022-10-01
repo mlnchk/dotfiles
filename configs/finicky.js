@@ -1,5 +1,5 @@
 module.exports = {
-  defaultBrowser: "Chrome",
+  defaultBrowser: "Arc",
   handlers: [
     {
       match: "open.spotify.com/*",

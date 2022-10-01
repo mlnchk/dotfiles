@@ -1,0 +1,30 @@
+# EXPORTS
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+export PATH=$PATH:/usr/local/sbin
+
+# PROMPT SETTINGS
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+autoload -U promptinit; promptinit
+prompt pure
+
+# COMPLETIONS
+autoload -Uz compinit; compinit
+
+# OPTIONS
+setopt auto_cd
+unsetopt inc_append_history
+unsetopt share_history
+
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
+# ALIASES
+alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
+alias gitclean="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
+alias k="kubectl"
+eval $(thefuck --alias)
+
+# PLUGINS
+source ~/.zsh-plugins/git.zsh
+source ~/.zsh-plugins/directories.zsh
+source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
