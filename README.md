@@ -8,7 +8,11 @@
 
 ## TODO
 
-- iterm config and theme
+- install zsh via brew
+- install asdf
+- link iterm config and theme
+- swith iterm theme automatically
+- script for saving current config
 - MACOS settings
   - change lang to caps lock
   - spotlight to cmd + space

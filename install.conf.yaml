@@ -7,10 +7,10 @@
 
 - shell:
     - [sh scripts/pre-install.sh, Running pre installation script 🏃‍♂️]
-    - [mkdir -p ~/.oh-my-zsh/custom/, Creating oh-my-zsh custom forlders]
+    - [mkdir -p ~/.oh-my-zsh/custom/, Creating oh-my-zsh custom folders]
     - [
         mkdir -p ~/.oh-my-zsh/custom/plugins,
-        Creating oh-my-zsh custom plugins forlders,
+        Creating oh-my-zsh custom plugins folders,
       ]
     - [brew bundle, Install all Brew packages 🍺]
     - [sh scripts/macos-settings.sh, Configure MacOS settings 🔩]
@@ -26,6 +26,7 @@
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/plugins/zsh-syntax-highlighting/
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/plugins/zsh-autosuggestions/
     ~/.oh-my-zsh/themes/stefanjudis.zsh-theme: oh-my-zsh/themes/stefanjudis.zsh-theme
+    ~/.finicky.js: configs/finicky.js
     "~/Library/Application Support/Code/User/settings.json":
       force: true
       path: vscode/settings.json

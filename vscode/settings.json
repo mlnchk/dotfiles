@@ -78,7 +78,14 @@
     "**/package-lock.json": true
   },
   "window.zoomLevel": 0.4,
-  "vim.smartRelativeLine": true,
   "prettier.useEditorConfig": false,
+  "editor.inlineSuggest.enabled": true,
+  "githubPullRequests.pullBranch": "never",
+  "git.openDiffOnClick": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "gitlens.menus": false,
   "workbench.activityBar.visible": false
 }
