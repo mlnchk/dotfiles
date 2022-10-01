@@ -8,6 +8,7 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # COMPLETIONS
+LISTMAX=300
 autoload -Uz compinit; compinit
 zstyle ':completion:*' menu select
 
@@ -23,8 +24,7 @@ bindkey "^[[B" down-line-or-beginning-search
 setopt auto_cd
 unsetopt inc_append_history
 unsetopt share_history
-
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+zle_highlight=('paste:none')
 
 # ALIASES
 alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
@@ -33,6 +33,7 @@ alias k="kubectl"
 eval $(thefuck --alias)
 
 # PLUGINS
+eval "$(zoxide init zsh)"
 source ~/.zsh-plugins/git.zsh
 source ~/.zsh-plugins/directories.zsh
 source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
