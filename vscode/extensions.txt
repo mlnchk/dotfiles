@@ -8,8 +8,9 @@ formulahendry.auto-rename-tag
 GitHub.github-vscode-theme
 GitHub.remotehub
 GitHub.vscode-pull-request-github
-HookyQR.beautify
 jrebocho.vscode-random
+mattpocock.ts-error-translator
+ms-vscode.remote-repositories
+Prisma.prisma
 samverschueren.linter-xo
 styled-components.vscode-styled-components
-vscodevim.vim

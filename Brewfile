@@ -10,8 +10,8 @@ brew "git"
 brew "httpie"
 brew "mas"
 brew "n"
+brew "pure"
 brew "thefuck"
-cask "brave-browser"
 cask "cloudflare-warp"
 cask "docker"
 cask "dozer"
@@ -22,8 +22,7 @@ cask "google-chrome"
 cask "iina"
 cask "iterm2"
 cask "linear-linear"
-cask "maccy"
-cask "meetingbar"
+cask "ngrok"
 cask "notion"
 cask "paw"
 cask "proxyman"
@@ -35,8 +34,8 @@ cask "transmission"
 cask "visual-studio-code"
 mas "Amphetamine", id: 937984704
 mas "Bitwarden", id: 1352778147
-mas "Dato", id: 1470584107
-mas "Flow", id: 1423210932
-mas "Hidden Bar", id: 1452453066
+mas "Flow", id: 14232109324
 mas "Magnet", id: 441258766
+mas "Reeder", id: 1529448980
 mas "The Unarchiver", id: 425424353
+mas "Things", id: 904280696
