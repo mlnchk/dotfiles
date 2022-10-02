@@ -28,6 +28,8 @@
       force: true
       path: zsh/zshrc
     ~/.finicky.js: configs/finicky.js
+    "~/Library/Application Support/iTerm2/Scripts/AutoLaunch/auto_dark_mode.py":
+      path: iterm/auto_dark_mode.py
     "~/Library/Application Support/Code/User/settings.json":
       force: true
       path: vscode/settings.json

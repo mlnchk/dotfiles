@@ -10,7 +10,10 @@ prompt pure
 # COMPLETIONS
 LISTMAX=300
 autoload -Uz compinit; compinit
+# select suggestions
 zstyle ':completion:*' menu select
+# case insesitive completions
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # UP DOWN ARROWS SEARCH
 autoload -U up-line-or-beginning-search

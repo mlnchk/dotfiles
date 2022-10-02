@@ -9,9 +9,6 @@
 ## TODO
 
 - asdf default languages
-- link iterm config and theme
-- swith iterm theme automatically
-- dump iterm config
 - MACOS settings
   - change lang to caps lock
   - spotlight to cmd + space
