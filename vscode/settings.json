@@ -4,7 +4,7 @@
   "editor.renderWhitespace": "none",
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
-  "editor.fontFamily": "FiraCode-Retina, 'Fira code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "MonoLisa, FiraCode-Retina, 'Fira code', Menlo, Monaco, 'Courier New', monospace",
   "editor.quickSuggestions": {
     "strings": true
   },
@@ -51,7 +51,7 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.enabled": false,
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.iconTheme": "chalice-icon-theme",
   "gitlens.views.commits.showBranchComparison": false,
   "gitlens.views.commits.avatars": false,
@@ -77,7 +77,7 @@
   "search.exclude": {
     "**/package-lock.json": true
   },
-  "window.zoomLevel": 0.4,
+  "window.zoomLevel": 0.5,
   "prettier.useEditorConfig": false,
   "editor.inlineSuggest.enabled": true,
   "githubPullRequests.pullBranch": "never",

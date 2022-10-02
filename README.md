@@ -8,7 +8,7 @@
 
 ## TODO
 
-- install asdf
+- asdf default languages
 - link iterm config and theme
 - swith iterm theme automatically
 - dump iterm config
