@@ -5,9 +5,6 @@
 
 - clean: ["~"]
 
-- create:
-    - ~/.hushlogin
-
 - shell:
     - [sh scripts/install-brew.sh, Installing Hombrew 🍺]
     - [brew tap homebrew/bundle, Installing Homebrew Bundle 🍺]
@@ -16,17 +13,20 @@
     - [sh scripts/macos-settings.sh, Configure MacOS settings 🔩]
     - [echo "You need to log out and log in to apply OS settings"]
 
+- create:
+    - ~/.hushlogin
+
 - link:
     ~/.gitignore_global: git/gitignore
     ~/.gitconfig: git/gitconfig
-    ~/.zsh-plugins:
-      path: zsh/plugins
-    ~/.zprofile:
-      force: true
+    ~/.zshenv:
+      path: zsh/zshenv
+    ~/.zsh/.zprofile:
       path: zsh/zprofile
-    ~/.zshrc:
-      force: true
+    ~/.zsh/.zshrc:
       path: zsh/zshrc
+    ~/.zsh/plugins:
+      path: zsh/plugins
     ~/.finicky.js: configs/finicky.js
     "~/Library/Application Support/iTerm2/Scripts/AutoLaunch/auto_dark_mode.py":
       path: iterm/auto_dark_mode.py

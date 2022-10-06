@@ -1,6 +1,7 @@
 # EXPORTS
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH=$PATH:/usr/local/sbin
+export PATH="$PATH:$HOME/.yarn/bin"
 
 # PROMPT SETTINGS
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
@@ -54,7 +55,7 @@ eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # PLUGINS
-source ~/.zsh-plugins/git.zsh
-source ~/.zsh-plugins/directories.zsh
-source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZDOTDIR/plugins/git.zsh
+source $ZDOTDIR/plugins/directories.zsh
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
