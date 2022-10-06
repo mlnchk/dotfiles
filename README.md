@@ -8,7 +8,6 @@
 
 ## TODO
 
-- asdf default languages
 - MACOS settings
   - change lang to caps lock
   - spotlight to cmd + space

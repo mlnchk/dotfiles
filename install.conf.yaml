@@ -5,13 +5,13 @@
 
 - clean: ["~"]
 
-- shell:
-    - [sh scripts/install-brew.sh, Installing Hombrew 🍺]
-    - [brew tap homebrew/bundle, Installing Homebrew Bundle 🍺]
-    - [brew bundle, Installing all Brew packages 🍺]
-    - [sh scripts/switch-shell.sh, Switching to zsh 💾]
-    - [sh scripts/macos-settings.sh, Configure MacOS settings 🔩]
-    - [echo "You need to log out and log in to apply OS settings"]
+# - shell:
+#     - [sh scripts/install-brew.sh, Installing Hombrew 🍺]
+#     - [brew tap homebrew/bundle, Installing Homebrew Bundle 🍺]
+#     - [brew bundle, Installing all Brew packages 🍺]
+#     - [sh scripts/switch-shell.sh, Switching to zsh 💾]
+#     - [sh scripts/macos-settings.sh, Configure MacOS settings 🔩]
+#     - [echo "You need to log out and log in to apply OS settings"]
 
 - create:
     - ~/.hushlogin
@@ -27,7 +27,10 @@
       path: zsh/zshrc
     ~/.zsh/plugins:
       path: zsh/plugins
-    ~/.finicky.js: configs/finicky.js
+    ~/.tool-versions:
+      force: true
+      path: home/tool-versions
+    ~/.finicky.js: home/finicky.js
     "~/Library/Application Support/iTerm2/Scripts/AutoLaunch/auto_dark_mode.py":
       path: iterm/auto_dark_mode.py
     "~/Library/Application Support/Code/User/settings.json":
@@ -36,7 +39,6 @@
     "~/Library/Application Support/Code/User/keybindings.json":
       force: true
       path: vscode/keybindings.json
-
-- shell:
-    - [sh scripts/install-vscode-extensions.sh, Installing vscode extensions]
-    - [git submodule update --init --recursive, Installing submodules]
+# - shell:
+#     - [sh scripts/install-vscode-extensions.sh, Installing vscode extensions]
+#     - [git submodule update --init --recursive, Installing submodules]
