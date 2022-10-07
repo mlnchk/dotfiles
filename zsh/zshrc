@@ -26,7 +26,7 @@ bindkey "^[[B" down-line-or-beginning-search
 
 # HISTORY
 HISTSIZE=5000
-HISTFILE=~/.zsh_history
+# HISTFILE=$ZDOTDIR/.zsh_history
 SAVEHIST=5000
 HISTDUP=erase
 setopt appendhistory
