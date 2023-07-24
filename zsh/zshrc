@@ -2,6 +2,13 @@
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH=$PATH:/usr/local/sbin
 export PATH="$PATH:$HOME/.yarn/bin"
+export PATH="$PATH:$HOME/.local/bin" # fig
+export PATH="$PATH:$HOME/.fig/bin" # fig
+# https://guides.cocoapods.org/using/getting-started.html#sudo-less-installation
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
+export LOCAL_IP=$(ipconfig getifaddr en0)
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # PROMPT SETTINGS
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
@@ -46,6 +53,7 @@ autoload -U colors && colors
 alias ls='ls -G'
 alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 alias gitclean="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
+alias sizes="du -sh ./* 2>/dev/null | sort -rh"
 alias k="kubectl"
 eval $(thefuck --alias)
 
