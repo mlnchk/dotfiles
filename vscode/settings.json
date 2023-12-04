@@ -124,6 +124,7 @@
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "editor.suggest.showWords": false,
   "typescript.format.enable": false,
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "window.commandCenter": false
   // "editor.snippetSuggestions": "bottom"
 }

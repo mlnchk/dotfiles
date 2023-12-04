@@ -13,3 +13,6 @@
   - spotlight to cmd + space
   - natural scroll for touchpad but usual for mouse
   - kabardiner elements ???
+
+- link ~/.zshrc to ~/.zsh/.zshrc
+  - some tools doesn't respect $ZDOTDIR
