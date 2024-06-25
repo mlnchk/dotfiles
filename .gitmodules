@@ -8,3 +8,6 @@
 [submodule "zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/plugins/zsh-npm-scripts-autocomplete"]
+	path = zsh/plugins/zsh-npm-scripts-autocomplete
+	url = https://github.com/grigorii-zander/zsh-npm-scripts-autocomplete.git
