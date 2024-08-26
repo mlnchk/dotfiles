@@ -2,6 +2,7 @@
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
 # EXPORTS
+export LANG="en_US.UTF-8"
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH=$PATH:/usr/local/sbin
 export PATH="$PATH:$HOME/.yarn/bin"
