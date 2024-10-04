@@ -52,32 +52,22 @@
   },
 
   /**
-   * Git
+   * Cursor Rewrites
    **/
   {
-    "key": "alt+b",
-    "command": "gitlens.toggleLineBlame",
-    "when": "editorFocus"
-  },
-
-  /**
-   * AI Chat
-   **/
-  //  see: https://github.com/getcursor/cursor/issues/1350#issuecomment-2365180968
-  {
-    "key": "cmd+]",
-    "command": "aichat.newfollowupaction",
-    "when": "editorFocus"
+    "key": "shift+cmd+l",
+    "command": "-aichat.insertselectionintochat"
   },
   {
-    "key": "cmd+]",
-    "command": "workbench.action.toggleAuxiliaryBar"
+    "key": "shift+cmd+e",
+    "command": "-aichat.fixerrormessage",
+    "when": "(arbitrary function)"
   },
 
   /**
    * Newcomers
    **/
-  {},
+  {}
   // {
   //   "key": "cmd+w",
   //   "command": "workbench.action.terminal.killActiveTab",
@@ -92,19 +82,4 @@
   //   "key": "cmd+w",
   //   "command": "-workbench.action.closeActiveEditor"
   // }
-  {
-    "key": "cmd+k cmd+k",
-    "command": "editor.action.defineKeybinding",
-    "when": "resource == 'vscode-userdata:/Users/mlnchk/Library/Application%20Support/Cursor/User/keybindings.json'"
-  },
-  {
-    "key": "cmd+r cmd+k",
-    "command": "-editor.action.defineKeybinding",
-    "when": "resource == 'vscode-userdata:/Users/mlnchk/Library/Application%20Support/Cursor/User/keybindings.json'"
-  },
-  {
-    "key": "shift+cmd+e",
-    "command": "-aichat.fixerrormessage",
-    "when": "(arbitrary function)"
-  }
 ]
