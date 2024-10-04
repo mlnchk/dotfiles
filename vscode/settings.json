@@ -41,7 +41,7 @@
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.labelFormat": "short",
+  // "workbench.editor.labelFormat": "short", // useful if tabs enabled
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
