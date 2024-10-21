@@ -1,6 +1,3 @@
-# Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
-
 # EXPORTS
 export LANG="en_US.UTF-8"
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
@@ -37,7 +34,7 @@ bindkey "^[[B" down-line-or-beginning-search
 
 # HISTORY
 HISTSIZE=5000
-# HISTFILE=$ZDOTDIR/.zsh_history
+# HISTFILE=.zsh_history
 SAVEHIST=5000
 HISTDUP=erase
 setopt appendhistory
@@ -67,11 +64,11 @@ eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # PLUGINS
-source $ZDOTDIR/plugins/git.zsh
-source $ZDOTDIR/plugins/directories.zsh
-source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $ZDOTDIR/plugins/zsh-npm-scripts-autocomplete/zsh-npm-scripts-autocomplete.plugin.zsh
+source ~/.zsh-plugins/git.zsh
+source ~/.zsh-plugins/directories.zsh
+source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh-plugins/zsh-npm-scripts-autocomplete/zsh-npm-scripts-autocomplete.plugin.zsh
 
 # pnpm
 export PNPM_HOME="/Users/mlnchk/Library/pnpm"
@@ -88,8 +85,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/Users/mlnchk/.bun/_bun" ] && source "/Users/mlnchk/.bun/_bun"
 # bun end
 
-. $(brew --prefix asdf)/libexec/asdf.sh
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -105,5 +100,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+# MISE
+eval "$(mise activate zsh)"

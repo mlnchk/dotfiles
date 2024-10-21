@@ -21,11 +21,11 @@
     ~/.gitconfig: git/gitconfig
     ~/.zshenv:
       path: zsh/zshenv
-    ~/.zsh/.zprofile:
+    ~/.zprofile:
       path: zsh/zprofile
-    ~/.zsh/.zshrc:
+    ~/.zshrc:
       path: zsh/zshrc
-    ~/.zsh/plugins:
+    ~/.zsh-plugins:
       path: zsh/plugins
     ~/.tool-versions:
       force: true
