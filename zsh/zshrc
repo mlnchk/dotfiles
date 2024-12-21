@@ -2,12 +2,6 @@
 export LANG="en_US.UTF-8"
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH=$PATH:/usr/local/sbin
-export PATH="$PATH:$HOME/.yarn/bin"
-export PATH="$PATH:$HOME/.local/bin" # fig
-export PATH="$PATH:$HOME/.fig/bin" # fig
-# https://guides.cocoapods.org/using/getting-started.html#sudo-less-installation
-export GEM_HOME=$HOME/.gem
-export PATH=$GEM_HOME/bin:$PATH
 export LOCAL_IP=$(ipconfig getifaddr en0)
 export HOMEBREW_NO_AUTO_UPDATE=1
 
@@ -34,7 +28,6 @@ bindkey "^[[B" down-line-or-beginning-search
 
 # HISTORY
 HISTSIZE=5000
-# HISTFILE=.zsh_history
 SAVEHIST=5000
 HISTDUP=erase
 setopt appendhistory
@@ -51,15 +44,10 @@ zle_highlight=('paste:none')
 autoload -U colors && colors
 
 # ALIASES
-alias ls='ls -G'
-alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 alias gitclean="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
-alias sizes="du -sh ./* 2>/dev/null | sort -rh"
-alias k="kubectl"
-eval $(thefuck --alias)
+
 
 # ADDONS
-
 eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -69,36 +57,6 @@ source ~/.zsh-plugins/directories.zsh
 source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh-plugins/zsh-npm-scripts-autocomplete/zsh-npm-scripts-autocomplete.plugin.zsh
-
-# pnpm
-export PNPM_HOME="/Users/mlnchk/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-# completions
-[ -s "/Users/mlnchk/.bun/_bun" ] && source "/Users/mlnchk/.bun/_bun"
-# bun end
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # MISE
 eval "$(mise activate zsh)"
