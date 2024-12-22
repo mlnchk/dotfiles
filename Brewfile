@@ -7,17 +7,16 @@ brew "mas"
 brew "mise"
 brew "pure"
 brew "zoxide"
+cask "1password"
 cask "1password-cli"
 cask "arc"
 cask "cursor"
-cask "dozer"
 cask "firefox"
 cask "google-chrome"
 cask "iina"
 cask "iterm2"
 cask "numi"
 cask "orbstack"
-cask "paw"
 cask "proxyman"
 cask "raycast"
 cask "spotify"
@@ -27,7 +26,6 @@ cask "visual-studio-code"
 mas "Bear", id: 1091189122
 mas "Flow", id: 1423210932
 mas "TestFlight", id: 899247664
-mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Tiny Softbox", id: 1599476381
 mas "Tomito", id: 1526042938
