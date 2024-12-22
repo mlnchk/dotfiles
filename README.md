@@ -25,7 +25,11 @@ cd dotfiles
 
 6. Go to Settings -> Keyboard -> Text Inputs -> Edit. Enable Caps Lock to switch Input Source.
 
-7. Add SSH key for github:
+7. Go to Settings -> Sound -> Sound Effects. Set Alert Volume to 0%.
+
+8. Go to Settings -> Internet Accounts. Log In to personal and working accounts.
+
+9. Add SSH key for github:
 
 ```sh
 ssh-keygen -t ed25519 -C "your_email@example.com"
