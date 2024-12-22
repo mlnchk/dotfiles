@@ -46,11 +46,6 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
-# Remove ui sound
-defaults write -g com.apple.sound.beep.feedback -integer 0
-defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
-defaults write com.apple.systemsound com.apple.sound.beep.volume -float 0
-
 # Disable input source switcher tooltip when using caps lock as input source switcher
 # That also replaces tooltip to modal with fn as input source switcher
 # https://gist.github.com/stephancasas/236f543b0f9f6509f5fe5878de01e38a?permalink_comment_id=4748936
