@@ -21,7 +21,20 @@ cd dotfiles
 
 4. Login to 1Password first, then browser, then Raycast, then everething else.
 
+5. Go to Settings -> Keyboard -> Keyboard Shortcuts. Disable shortcuts for Spotlight and Input Source.
+
+6. Go to Settings -> Keyboard -> Text Inputs -> Edit. Enable Caps Lock to switch Input Source.
+
+7. Add SSH key for github:
+
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+Go to [GitHub Settings -> SSH and GPG keys -> New SSH key](https://github.com/settings/keys).
+
 ## TODO
 
-- change lang to caps lock
+- change lang to caps lock automatically
 - configure ssh key for github
