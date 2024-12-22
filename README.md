@@ -17,7 +17,9 @@ cd dotfiles
 ./install
 ```
 
-3. Login to 1Password, Raycast, Arc, Cursor, etc.
+3. Log out from the system to apply changes.
+
+4. Login to 1Password first, then browser, then Raycast, then everething else.
 
 ## TODO
 
