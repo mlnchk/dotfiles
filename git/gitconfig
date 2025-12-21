@@ -9,3 +9,5 @@
 	rebase = false
 [rerere]
 	enabled = true
+[push]
+	autoSetupRemote = true

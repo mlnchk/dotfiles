@@ -50,3 +50,6 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 # That also replaces tooltip to modal with fn as input source switcher
 # https://gist.github.com/stephancasas/236f543b0f9f6509f5fe5878de01e38a?permalink_comment_id=4748936
 defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
+
+# Change default currency to USD. See: https://discussions.apple.com/thread/254381619?sortBy=rank
+defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"

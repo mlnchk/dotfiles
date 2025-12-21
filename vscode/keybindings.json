@@ -67,19 +67,17 @@
   /**
    * Newcomers
    **/
-  {}
-  // {
-  //   "key": "cmd+w",
-  //   "command": "workbench.action.terminal.killActiveTab",
-  //   "when": "terminalTabsFocus"
-  // },
-  // {
-  //   "key": "cmd+w",
-  //   "command": "workbench.action.closeActiveEditor",
-  //   "when": "editorFocus"
-  // },
-  // {
-  //   "key": "cmd+w",
-  //   "command": "-workbench.action.closeActiveEditor"
-  // }
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalHasBeenCreated && terminalIsOpen && terminalProcessSupported && terminalFocus && !terminalEditorFocus"
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\u001b\r"
+    },
+    "when": "terminalFocus"
+},
 ]

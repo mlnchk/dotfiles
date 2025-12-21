@@ -2,11 +2,9 @@
 export LANG="en_US.UTF-8"
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH=$PATH:/usr/local/sbin
-export LOCAL_IP=$(ipconfig getifaddr en0)
-export HOMEBREW_NO_AUTO_UPDATE=1
 
 # PROMPT SETTINGS
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
+fpath+=("/opt/homebrew/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
@@ -46,10 +44,9 @@ autoload -U colors && colors
 # ALIASES
 alias gitclean="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
 
-
 # ADDONS
 eval "$(zoxide init zsh)"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # PLUGINS
 source ~/.zsh-plugins/git.zsh
@@ -60,3 +57,14 @@ source ~/.zsh-plugins/zsh-npm-scripts-autocomplete/zsh-npm-scripts-autocomplete.
 
 # MISE
 eval "$(mise activate zsh)"
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
