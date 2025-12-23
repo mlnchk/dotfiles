@@ -30,6 +30,12 @@
     ~/.tool-versions:
       force: true
       path: home/tool-versions
+    ~/.config/ghostty/config:
+      force: true
+      path: ghostty/config
+    ~/.config/ghostty/themes:
+      force: true
+      path: ghostty/themes
     "~/Library/Application Support/Code/User/settings.json":
       force: true
       path: vscode/settings.json
