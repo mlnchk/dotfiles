@@ -1,4 +1,4 @@
-theme = light:GitHub Light Legacy, dark:GitHub Dark
+theme = light:GitHub Light Legacy, dark:GitHub Dark Dimmed
 
 font-size = 18
 font-thicken = true
@@ -7,3 +7,12 @@ window-padding-x = 10
 window-padding-y = 10
 
 macos-titlebar-proxy-icon = hidden
+
+working-directory = /Users/mlnchk/Developer
+window-inherit-working-directory = true
+
+window-height = 40
+window-width = 140
+# window-save-state = always
+
+keybind = shift+enter=text:\x1b\r
