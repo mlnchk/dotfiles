@@ -42,3 +42,15 @@
     "~/Library/Application Support/Code/User/keybindings.json":
       force: true
       path: vscode/keybindings.json
+    ~/.claude/settings.json:
+      force: true
+      path: claude/settings.json
+    ~/.claude/statusline-command.sh:
+      force: true
+      path: claude/statusline-command.sh
+    ~/.claude/CLAUDE.md:
+      force: true
+      path: claude/CLAUDE.md
+    ~/.claude/skills:
+      force: true
+      path: claude/skills

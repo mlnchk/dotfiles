@@ -2,3 +2,5 @@
 .parcel-cache
 
 mise.toml
+
+.claude/settings.local.json
