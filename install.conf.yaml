@@ -54,3 +54,6 @@
     ~/.claude/skills:
       force: true
       path: claude/skills
+    ~/.finicky.ts:
+      force: true
+      path: finicky/finicky.ts
